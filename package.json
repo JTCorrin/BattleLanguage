@@ -1,0 +1,17 @@
+{
+  "name": "battlelanguage",
+  "version": "0.0.1",
+  "description": "Battle Language is the DHT written for the Ixian Crypto Currency",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "dev": "node index.js"
+  },
+  "author": "JT (Corrin Data and Systems)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {}
+}
