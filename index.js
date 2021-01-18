@@ -1,8 +1,9 @@
-import { node } from './lib/base-node.js'
+import KademliaNode from './lib/kademlia-node.js'
 
 
-const n = new node()
+const n = new KademliaNode()
 n.listen()
 const message = Buffer.from('Some bytes');
 
-n.sendMessage(message, { port: 8089, address: "192.168.0.14" })
+let note = n.createNotification('ping', { "test": "hello" })
+console.log(note);
