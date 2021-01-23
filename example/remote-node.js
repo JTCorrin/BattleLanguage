@@ -3,11 +3,14 @@ import KademliaNode from '../lib/kademlia-node.js'
 
 //const db = level("db/test_db")
 const PORT = process.argv.slice(2)[0]
+const BOOTSTRAP_PORT = process.argv.slice(2)[1]
 
 const n = new KademliaNode({
     PORT: PORT
 })
 // const message = Buffer.from('Some bytes');
 
-let joinRequest = n.createRequest('join', {})
+console.log(`NODE IDENTITY ${ n.identity.toString('hex') }`);
+let joinRequest = n.createRequest('join', { 'id': n.identity.toString('hex') })
 
+n.send(joinRequest, { address: '0.0.0.0', port: BOOTSTRAP_PORT })

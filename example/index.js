@@ -10,5 +10,5 @@ const n = new KademliaNode({
 // const message = Buffer.from('Some bytes');
 
 let note = n.createNotification('ping', { "test": "hello" })
-n.send(note, { address: "0.0.0.0", port: "7980" })
+n.send(note, { address: "0.0.0.0", port: "7816" })
 console.log(note);
