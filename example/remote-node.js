@@ -11,6 +11,5 @@ const n = new KademliaNode({
 // const message = Buffer.from('Some bytes');
 
 console.log(`NODE IDENTITY ${ n.identity.toString('hex') }`);
-let joinRequest = n.createRequest('join', { 'id': n.identity.toString('hex') })
 
-n.send(joinRequest, { address: '0.0.0.0', port: BOOTSTRAP_PORT })
+n.join(["9068e7e853fce6a05c04448ffd7115a2362a66f5", { address: "0.0.0.0", port: 7816 }])

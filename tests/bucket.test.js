@@ -16,9 +16,9 @@ describe("@module `bucket`", () => {
     })
     
 
-    describe("@property `get k`", () => {
-        it("should be of `k` length", () => {
-            expect(b.k).toBe(20)
+    describe("@property `get limit`", () => {
+        it("should be of `limit` length", () => {
+            expect(b.limit).toBe(20)
         })
     })
     
