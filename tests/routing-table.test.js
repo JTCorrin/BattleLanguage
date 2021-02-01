@@ -18,9 +18,11 @@ describe("@module routing-table", () => {
 
 
     describe("@function `addContactByNodeId`", () => {
+        
         RT.addContactByNodeId(RT.identity, {})
         const remoteNode = utils.getRandomKeyBuffer()
         RT.addContactByNodeId(remoteNode)
+
         it("automatically places its own address in bucket 0", () => {
             const i = RT.indexOf(RT.identity)
             expect(i).toBe(0)
@@ -31,6 +33,11 @@ describe("@module routing-table", () => {
             const i = RT.indexOf(remoteNode)
             expect(i).toBeGreaterThan(0)
         })
+    })
+
+
+    describe("@function removeNodeByNodeId", () => {
+        
     })
     
 })
