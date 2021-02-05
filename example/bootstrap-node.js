@@ -10,4 +10,7 @@ const n = new KademliaNode({
 })
 
 console.log(`BOOTSTRAP NODE IDENTITY ${ n.identity.toString('hex') }`);
+n.on("nodeAdded", (id) => {
+    console.log(`Added ${ id }`);
+})
 
