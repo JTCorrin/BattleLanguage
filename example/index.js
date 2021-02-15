@@ -15,3 +15,6 @@ console.log(`NODE IDENTITY ${ n.identity.toString('hex') }`);
 
 n.join([BOOTSTRAP_NODEID,{ address: '0.0.0.0', port: BOOTSTRAP_PORT }])
 
+// So what if we simply want to find a value...? We need the API to do so
+
+
