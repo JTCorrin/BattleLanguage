@@ -8,6 +8,7 @@
     "test": "jest --watchAll",
     "dev": "nodemon example/index.js",
     "dev-remote": "nodemon example/remote-node.js",
+    "dev-remote2": "nodemon example/remote-node-2.js",
     "dev-bootstrap": "nodemon example/bootstrap-node.js"
   },
   "author": "JT (Corrin Data and Systems)",

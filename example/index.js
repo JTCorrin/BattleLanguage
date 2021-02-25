@@ -16,5 +16,5 @@ console.log(`NODE IDENTITY ${ n.identity.toString('hex') }`);
 n.join([BOOTSTRAP_NODEID,{ address: '0.0.0.0', port: BOOTSTRAP_PORT }])
 
 // So what if we simply want to find a value...? We need the API to do so
-
+//n.find_key(["4961f002-b306-4e01-aa58-58fa88ba6e55", { address: '0.0.0.0', port: PORT }]) // TODO Listen to the event?
 
